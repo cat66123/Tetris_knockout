@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="cat66UITetrisWithKO.css" rel="stylesheet" />
+</head>
+<body>
+    <!--界面-->
+    <!--<div class="smallDiv"><div class="smallDivInner"></div></div>-->
+    <div id="boxOuter">
+        <div id="title">俄罗斯方块</div>
+        <div id="boxInnerTop">
+            <div id="boxInnerTopLeft">
+                
+            </div>
+            <div id="boxInnerTopMiddle">
+                <div id="boxInnerTopMiddleOuter">
+                    <div id="boxInnerTopMiddleOuterLeft" data-bind="foreach:BoxRows">
+                    <!-- ko foreach:Boxes -->
+                    <div class="smallDiv"><div class="smallDivInner" data-bind="style:{ backgroundColor: Color()?'red':Marked() ? 'black' : 'lightgray'}"></div></div><!--data-bind="style:{ backgroundColor: Marked() ? 'black' : 'lightgray'}"-->
+                    <!-- /ko -->
+                    </div>
+                    <div id="boxInnerTopMiddleOuterRight">
+                        <div id="score">得分：<br/><span data-bind="text:totalScore"></span></div>
+                        <div id="cleanCount">消除行：<br/><span data-bind="text:score"></span></div>
+                        <div id="level">级别：<br/><span data-bind="text:speed"></span></div>
+                        <div id="nextBlock">下一个：<div id="smallBox" data-bind="foreach:smallBoxRows">
+                                <!-- ko foreach:Boxes -->
+                                <div class="smallDiv"><div class="smallDivInner" data-bind="style:{ backgroundColor: Marked() ? 'black' : 'lightgray'}"></div></div>
+                                <!-- /ko -->
+                        </div>
+                        </div>
+                        <div id="currTime">时间：<span data-bind="text:date"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="boxInnerTopRight">
+                
+            </div>
+        </div>
+        <div id="boxInnerBottom">
+            <div id="boxInnerBottomLeft">
+                <div id="boxInnerBottomLeftTop">
+                    <div id="restart" data-bind="click:startGame">重玩(R)</div>
+                    <div id="stop" data-bind="click:stopGame">暂停(P)</div>
+                    
+                </div>
+                <div id="boxInnerBottomLeftBottom">
+                    <div id="start" data-bind="click:drop">开始(SPACE)</div>
+                </div>
+            </div>
+            <div id="boxInnerBottomRight">
+                <div id="keyTop" data-bind="click:blocksRotate">旋转(↑)</div>
+                <div id="keyLeft" data-bind="click:blocksMoveLeft">左移(←)</div>
+                <div id="keyRight" data-bind="click:blocksMoveRight">右移(→)</div>
+                <div id="keyBottom" data-bind="click:blocksDrop">下移(↓)</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="height:750px;"></div>
+
+</body>
+</html>
+
+<script src="knockout-3.4.2.js"></script>
+<script src="jquery-1.7.1.js"></script>
+<!--<script src="cat66UITetrisWithKO.js"></script>-->
+<script src="cat66TetrisWithKO.js"></script>

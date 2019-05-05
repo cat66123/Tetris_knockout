@@ -1,0 +1,211 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+.smallDiv {
+    float:left;
+    margin-left:2px;
+    width:15px;
+    height:15px;
+    border:1px solid lightgray;
+}
+.smallDivInner {
+    width:11px;
+    height:11px;
+    border:1px solid lightgray;
+    background-color:lightgray;
+    margin-left:1px;
+    margin-top:1px;
+}
+/*title*/
+#title {
+    width:450px;
+    height:50px;
+    //background:black;
+    margin:auto;
+    font-size:25px;
+    text-align:center;
+    line-height:50px;
+}
+/*大边框*/
+#boxOuter {
+    width:500px;
+    height:700px;
+    border:5px solid #b8edf5;
+    border-radius:40px;
+    background:#71d2dc;
+    position:absolute;
+    left:50%;
+    margin-left:-200px;
+    top:50%;
+    margin-top:-380px;
+}
+/*方块部分*/
+#boxInnerTop {
+    width:450px;
+    height:420px;
+    //background:red;
+    margin:auto;
+    //margin-top:30px;
+    
+}
+#boxInnerTopLeft {
+    width:45px;
+    height:420px;
+    //background:green;
+    float:left;
+}
+#boxInnerTopMiddle {
+    width:350px;
+    height:410px;
+    background:yellow;
+    border:5px solid black;
+    float:left;
+}
+#boxInnerTopRight {
+    width:45px;
+    height:420px;
+    //background:red;
+    float:right;
+}
+
+#boxInnerTopMiddleOuter {
+    width:300px;
+    height:360px;
+    background:orange;
+    border:5px inset #e2e289;
+    margin:auto;
+    margin-top:20px;
+}
+/*小方块*/
+#boxInnerTopMiddleOuterLeft {
+    width:190px;
+    height:342px;
+    background:white;
+    border:2px solid black;
+    margin-top:7px;
+    margin-left:7px;
+    float:left;
+}
+#boxInnerTopMiddleOuterRight {
+    width:82px;
+    height:342px;
+    //background:white;
+    margin-left:10px;
+    margin-top:9px;
+    float:left;
+}
+#score, #cleanCount ,#level, #nextBlock, #currTime{
+    width:82px;
+    height:68px;
+}
+#score {
+    //background:green;
+}
+#cleanCount {
+    //background:red;
+}
+#level {
+    //background:white;
+}
+#nextBlock {
+    //background:blue;
+}
+#currTime {
+    //background:gray;
+}
+.left,.right {
+    width:45px;
+    height:84px;
+    //border:1px solid white;
+}
+
+/*按钮部分*/
+#boxInnerBottom {
+    width:450px;
+    height:210px;
+    //background:pink;
+    margin:auto;
+}
+#boxInnerBottomLeft {
+    width:240px;
+    height:210px;
+    //background:green;
+    float:left;
+}
+#boxInnerBottomRight {
+    width:210px;
+    height:210px;
+   //background:red;
+    float:left;
+}
+#boxInnerBottomLeftTop {
+    width:240px;
+    height:80px;
+    //background:black;
+}
+#boxInnerBottomLeftBottom {
+    width:210px;
+    height:100px;
+   // background:yellow;
+    padding:15px;
+}
+
+#stop {
+    width:70px;
+    height:70px;
+    background:green;
+    border-radius:50%;
+    line-height:70px;
+    text-align:center;
+    float:right;
+    margin-right:20px;
+    margin-top:2px;
+    border:3px outset #47c259;
+}
+#restart {
+    width:70px;
+    height:70px;
+    background:green;
+    border-radius:50%;
+    line-height:70px;
+    text-align:center;
+    float:right;
+    margin-top:2px;
+    margin-right:20px;
+    border:3px outset #47c259;
+}
+#start {
+    width:100px;
+    height:100px;
+    background:pink;
+    line-height:100px;
+    text-align:center;
+    border-radius:50%;
+    border:3px outset #f6b4e8;
+    margin-left:65px;
+    //margin-bottom:15px;
+}
+#keyLeft, #keyTop, #keyRight, #keyBottom {
+    height:64px;
+    width:64px;
+    background:#a87eb9;
+    border-radius:50%;
+    border:3px outset #257db0;
+    line-height:64px;
+    text-align:center;
+}
+#keyLeft {
+    
+}
+#keyTop{
+    margin-left:70px;
+}
+#keyRight {
+    margin-left:140px;
+    margin-top:-70px;
+}
+#keyBottom{
+    margin-left:70px;
+}
+
